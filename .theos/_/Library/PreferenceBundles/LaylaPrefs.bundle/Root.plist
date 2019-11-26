@@ -114,12 +114,16 @@
             <string>taki</string>
             <key>user</key>
             <string>74k1_</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
         </dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>Layla By ShyMemoriees &  Made With ❤️</string>
+			<key>footerText</key>
+			<string>Layla by ShyMemoriees and iKilledAppl3, Made With ❤️</string>
+			<key>isStaticText</key>
+			<true/>
 		</dict>
 	</array>
 	<key>title</key>
