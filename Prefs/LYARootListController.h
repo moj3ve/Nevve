@@ -5,10 +5,10 @@
 #import <Cephei/HBPreferences.h>
 #import "NSTask.h"
 
-@interface RSEAppearanceSettings : HBAppearanceSettings
+@interface LYAAppearanceSettings : HBAppearanceSettings
 @end
 
-@interface RSERootListController : HBRootListController {
+@interface LYARootListController : HBRootListController {
     UITableView * _table;
 }
 

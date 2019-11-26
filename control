@@ -1,9 +1,12 @@
 Package: me.shymemoriees.layla
 Name: Layla
-Depends: mobilesubstrate
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), com.spark.libpackageinfo (>= 1.1.4)
 Version: 1.0
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: ShyMemoriees & iKilledAppl3 <shymemoriees@yahoo.com>
 Author: ShyMemoriees & iKilledAppl3 <shymemoriees@yahoo.com>
 Section: Tweaks
+Depiction: https://repo.shymemoriees.me/depictions/lya/index.html
+SileoDepiction: https://repo.shymemoriees.me/depictions/lya/lya.json
+Icon: https://repo.shymemoriees.me/depictions/lya/assets/icon.png

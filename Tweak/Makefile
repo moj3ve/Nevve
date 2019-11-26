@@ -6,9 +6,9 @@ INSTALL_TARGET_PROCESSES = SpringBoard
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = Layla
-$(TWEAK_NAME)_FRAMEWORKS = UIKit AudioToolbox
-
-Layla_FILES = Tweak.x
-Layla_CFLAGS = -fobjc-arc
+$(TWEAK_NAME)_FILES = Tweak.x
+$(TWEAK_NAME)_CFLAGS += -fobjc-arc
+$(TWEAK_NAME)_FRAMEWORKS += UIKit AudioToolbox
+$(TWEAK_NAME)_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk

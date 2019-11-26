@@ -1,12 +1,12 @@
-#include "RSERootListController.h"
+#include "LYARootListController.h"
 
-@implementation RSERootListController
+@implementation LYARootListController
 
 - (instancetype)init {
     self = [super init];
 
     if (self) {
-        RSEAppearanceSettings *appearanceSettings = [[RSEAppearanceSettings alloc] init];
+        LYAAppearanceSettings *appearanceSettings = [[LYAAppearanceSettings alloc] init];
         self.hb_appearanceSettings = appearanceSettings;
         self.respringButton = [[UIBarButtonItem alloc] initWithTitle:@"ReSpring" 
                                     style:UIBarButtonItemStylePlain
@@ -19,14 +19,14 @@
         self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,10,10)];
         self.titleLabel.font = [UIFont boldSystemFontOfSize:17];
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-        self.titleLabel.text = @"Rose";
+        self.titleLabel.text = @"Layla";
         self.titleLabel.textColor = [UIColor whiteColor];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         [self.navigationItem.titleView addSubview:self.titleLabel];
 
         self.iconView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,10,10)];
         self.iconView.contentMode = UIViewContentModeScaleAspectFit;
-        self.iconView.image = [UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/RosePrefs.bundle/icon@2x.png"];
+        self.iconView.image = [UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/LaylaPrefs.bundle/icon@2x.png"];
         self.iconView.translatesAutoresizingMaskIntoConstraints = NO;
         self.iconView.alpha = 0.0;
         [self.navigationItem.titleView addSubview:self.iconView];
@@ -60,7 +60,7 @@
     self.headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0,200,200)];
     self.headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,200,200)];
     self.headerImageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.headerImageView.image = [UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/RosePrefs.bundle/Banner.png"];
+    self.headerImageView.image = [UIImage imageWithContentsOfFile:@"/Library/PreferenceBundles/LaylaPrefs.bundle/Banner.png"];
     self.headerImageView.translatesAutoresizingMaskIntoConstraints = NO;
 
     [self.headerView addSubview:self.headerImageView];
@@ -123,14 +123,14 @@
 }
 
 -(void)respring {
-	UIAlertController *respring = [UIAlertController alertControllerWithTitle:@"Rose"
-													 message:@"ReSpringing is only required to enable/disable the tweak, haptic feedback enables/disables dynamically."
+	UIAlertController *respring = [UIAlertController alertControllerWithTitle:@"Layla"
+													 message:@"Are you sure you want to ReSpring?"
 													 preferredStyle:UIAlertControllerStyleAlert];
-	UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+	UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"Yep" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
 			[self respringUtil];
 	}];
 
-	UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+	UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:nil];
 	[respring addAction:confirmAction];
 	[respring addAction:cancelAction];
 	[self presentViewController:respring animated:YES completion:nil];

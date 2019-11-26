@@ -1,6 +1,6 @@
-#import "RSERootListController.h"
+#import "LYARootListController.h"
 
-@implementation RSEAppearanceSettings
+@implementation LYAAppearanceSettings
 
 -(UIColor *)tintColor {
     return [UIColor colorWithRed:0.64 green:0.67 blue:1.00 alpha:1.0];;
