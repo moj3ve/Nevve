@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+            <key>action</key>
+            <string>twitterShy</string>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>@ShyMemoriees</string>
+            <key>cellClass</key>
+            <string>HBTwitterCell</string>
+            <key>label</key>
+            <string>ShyMemoriees</string>
+            <key>user</key>
+            <string>ShyMemoriees</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enabled (Respring required)</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+				<!-- Haptic Engine Strength -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Engine Strength - iPhone 6s/6s+</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>enableHapticEngine</string>
+			<key>label</key>
+			<string>Use Haptic Engine</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>HapticStrength</string>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Light</string>
+				<string>Medium</string>
+				<string>Strong</string>
+			</array>
+			<key>alignment</key>
+			<string>3</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+				<!-- Taptic Engine Strength -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Taptic Engine Strength - iPhone 7/7+ and up</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>enableTapticEngine</string>
+			<key>label</key>
+			<string>Use Taptic Engine</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>TapticStrength</string>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Light</string>
+				<string>Medium</string>
+				<string>Heavy</string>
+				<string>Soft</string>
+				<string>Rigid</string>
+			</array>
+			<key>alignment</key>
+			<string>5</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+				<!-- Sub Menus -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback Options</string>
+		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Homescreen</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>HomescreenSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Lockscreen</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>LockscreenSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Anywhere</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>AnywhereSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Hardware Buttons</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>HardwareButtonsSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Control Center</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>ControlCenterSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Status Changes</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>StatusChangesSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Other Hardware Actions</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>OtherHardwareActionsSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Others</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>OthersSub</string>
+ 		</dict>
+		<dict>
+ 			<key>cell</key>
+ 			<string>PSLinkCell</string>
+ 			<key>label</key>
+ 			<string>Applications</string>
+ 			<key>detail</key>
+ 			<string>RSESubPrefsListController</string>
+ 			<key>RSESub</key>
+ 			<string>ApplicationsSub</string>
+ 		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Delay - Seconds</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>enableHapticDelay</string>
+			<key>label</key>
+			<string>Enable Delay</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<real>10</real>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>Delay</string>
+			<key>min</key>
+			<real>0</real>
+			<key>max</key>
+			<real>10</real>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+		<!-- Warnings -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Warnings And Alerts</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>shutdownWarning</string>
+			<key>label</key>
+			<string>Show Shutdown Warning - iOS 12</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>featureWarning</string>
+			<key>label</key>
+			<string>Show Feature Warning If Needed</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+		<!-- Support Me -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Support Me</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Little Donation 🌺</string>
+			<key>subtitle</key>
+			<string>Helps Me To Pay For My Server</string>
+			<key>url</key>
+			<string>https://paypal.me/ShyMemoriees</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Feature Request? ✨</string>
+			<key>subtitle</key>
+			<string>Send Me An Email With Your Request</string>
+			<key>url</key>
+			<string>mailto:shymemoriees@yahoo.com</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Source Code 🌙</string>
+			<key>subtitle</key>
+			<string>Github</string>
+			<key>url</key>
+			<string>https://github.com/ShyMemoriees/Rose</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Found A Bug? 🌧</string>
+			<key>subtitle</key>
+			<string>Leave A Bug Report Here</string>
+			<key>url</key>
+			<string>https://github.com/ShyMemoriees/Rose/issues/new</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Taught Me A Lot Of Things</string>
+		</dict>
+		<dict>
+            <key>action</key>
+            <string>twitterEsq</string>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>@EsquilliDev</string>
+            <key>cellClass</key>
+            <string>HBTwitterCell</string>
+            <key>label</key>
+            <string>EsquilliDev</string>
+            <key>user</key>
+            <string>EsquilliDev</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Icon Design</string>
+		</dict>
+		<dict>
+            <key>action</key>
+            <string>twittertaki</string>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>@74k1_</string>
+            <key>cellClass</key>
+            <string>HBTwitterCell</string>
+            <key>label</key>
+            <string>taki</string>
+            <key>user</key>
+            <string>74k1_</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Provided Me 4 Methods</string>
+		</dict>
+		<dict>
+            <key>action</key>
+            <string>twitteriKilled</string>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>@iKilledAppl3</string>
+            <key>cellClass</key>
+            <string>HBTwitterCell</string>
+            <key>label</key>
+            <string>iKilledAppl3</string>
+            <key>user</key>
+            <string>iKilledAppl3</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Taught Me Some Other Things</string>
+		</dict>
+		<dict>
+            <key>action</key>
+            <string>twitterartikus</string>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>@artikushg</string>
+            <key>cellClass</key>
+            <string>HBTwitterCell</string>
+            <key>label</key>
+            <string>ArtikusHG</string>
+            <key>user</key>
+            <string>artikushg</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Rose By ShyMemoriees, Made With ❤️</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Rose</string>
+</dict>
+</plist>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback When...</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTplayButton</string>
+			<key>label</key>
+			<string>Resuming/Pausing Song</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTpreviousTrackButton</string>
+			<key>label</key>
+			<string>Going To Previous Song</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTnextTrackButton</string>
+			<key>label</key>
+			<string>Skipping Song</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTrepeatButton</string>
+			<key>label</key>
+			<string>Tapping Repeat Button</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTshuffleButton</string>
+			<key>label</key>
+			<string>Tapping Shuffle Button</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTqueueButton</string>
+			<key>label</key>
+			<string>Tapping Queue Button</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTslider</string>
+			<key>label</key>
+			<string>Using Time Slider</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTfreeTierButton</string>
+			<key>label</key>
+			<string>Tapping Like Button</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTavailableDevicesButton</string>
+			<key>label</key>
+			<string>Tapping Devices Button</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>SPTnowPlayingLabel</string>
+			<key>label</key>
+			<string>Tapping Song Label</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+	</array>
+	<key>title</key>
+	<string>Rose</string>
+</dict>
+</plist>

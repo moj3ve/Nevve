@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback When...</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>displayWake</string>
+			<key>label</key>
+			<string>Display Wakes</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.shymemoriees.rosepreferences</string>
+			<key>key</key>
+			<string>ChargerPluggedInOrOut</string>
+			<key>label</key>
+			<string>Charger Plugged In/Out</string>
+			<key>PostNotification</key>
+			<string>me.shymemoriees.rosepreferences/ReloadPrefs</string>
+		</dict>
+
+	</array>
+	<key>title</key>
+	<string>Rose</string>
+</dict>
+</plist>

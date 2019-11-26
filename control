@@ -1,0 +1,9 @@
+Package: me.shymemoriees.layla
+Name: Layla
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: ShyMemoriees & iKilledAppl3 <shymemoriees@yahoo.com>
+Author: ShyMemoriees & iKilledAppl3 <shymemoriees@yahoo.com>
+Section: Tweaks
