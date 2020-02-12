@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Play Sound When...</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>connectivitySounds</string>
+			<key>label</key>
+			<string>Toggling Connectivity Module</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Control Center</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>controlCenterSounds</string>
+			<key>label</key>
+			<string>Opening Control Center</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Control Center</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>ccModuleSounds</string>
+			<key>label</key>
+			<string>Toggling CC Module (Experimental)</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Control Center</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+	</array>
+	<key>title</key>
+	<string>Control Center</string>
+</dict>
+</plist>

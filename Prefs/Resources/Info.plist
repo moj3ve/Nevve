@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>LaylaPrefs</string>
+	<string>NevvePrefs</string>
 	<key>CFBundleIdentifier</key>
-	<string>me.shymemoriees.laylapreferences</string>
+	<string>sh.litten.nevvepreferences</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -19,6 +19,6 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSPrincipalClass</key>
-	<string>LYARootListController</string>
+	<string>NVERootListController</string>
 </dict>
 </plist>

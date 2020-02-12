@@ -1,12 +1,12 @@
-# Layla
+# Nevve
 
-UISounds Customizing Tweak for iOS, trough iOS.
+Sounds Falling Down To Your Device
 
 ## Installation
 
-1. Add this repository to your Package Manager: https://repo.shymemoriees.me
-2. Install Layla.
+1. Add this repository to your Package Manager: https://repo.litten.sh
+2. Install Nevve.
 
 ## Bugs
 
-Found a bug? [open a new issue](https://github.com/ShyMemoriees/Layla/issues/new).
+Found a bug? [open a new issue](https://github.com/Litteeen/Nevve/issues/new).

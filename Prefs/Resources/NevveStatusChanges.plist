@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Play Sound When...</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>unlockedSounds</string>
+			<key>label</key>
+			<string>Unlocked/NC</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Status Changes</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>lockedSounds</string>
+			<key>label</key>
+			<string>Locked</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Status Changes</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>authenticationSounds</string>
+			<key>label</key>
+			<string>Authenticated With Touch/FaceID</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Status Changes</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>None</string>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>callSounds</string>
+			<key>label</key>
+			<string>Call Connects/Disconnects</string>
+			<key>set</key>
+			<string>setAndPreview:forSpecifier:</string>
+			<key>title</key>
+			<string>Status Changes</string>
+			<key>titlesDataSource</key>
+			<string>getData:</string>
+			<key>valuesDataSource</key>
+			<string>getData:</string>
+		</dict>
+		
+	</array>
+	<key>title</key>
+	<string>Status Changes</string>
+</dict>
+</plist>

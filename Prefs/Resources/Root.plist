@@ -6,19 +6,103 @@
 	<array>
 
 		<dict>
-            <key>action</key>
-            <string>twitterShy</string>
             <key>cell</key>
             <string>PSButtonCell</string>
             <key>label</key>
-            <string>@ShyMemoriees</string>
+            <string>@Litteeen</string>
             <key>cellClass</key>
             <string>HBTwitterCell</string>
             <key>label</key>
-            <string>ShyMemoriees</string>
+            <string>Litten</string>
             <key>user</key>
-            <string>ShyMemoriees</string>
+            <string>Litteeen</string>
         </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enabled (Respring required)</string>
+			<key>PostNotification</key>
+			<string>sh.litten.nevvepreferences/ReloadPrefs</string>
+		</dict>
+
+				<!-- Sub Menus -->
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Sound Options</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveHomescreenListController</string>
+			<key>label</key>
+			<string>Homescreen</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveLockscreenListController</string>
+			<key>label</key>
+			<string>Lockscreen</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveAnywhereListController</string>
+			<key>label</key>
+			<string>Anywhere</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveHardwareButtonsListController</string>
+			<key>label</key>
+			<string>Hardware Buttons</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveControlCenterListController</string>
+			<key>label</key>
+			<string>Control Center</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveStatusChangesListController</string>
+			<key>label</key>
+			<string>Status Changes</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>NevveOtherHardwareActionsListController</string>
+			<key>label</key>
+			<string>Other Hardware Actions</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Original Roxanne Developer</string>
+		</dict>
 		<dict>
             <key>action</key>
             <string>twitteriKilled</string>
@@ -33,68 +117,7 @@
             <key>user</key>
             <string>iKilledAppl3</string>
         </dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>me.shymemoriees.laylapreferences</string>
-			<key>key</key>
-			<string>Enabled</string>
-			<key>label</key>
-			<string>Enabled (Respring required)</string>
-			<key>PostNotification</key>
-			<string>me.shymemoriees.laylapreferences/ReloadPrefs</string>
-		</dict>
 
-		<!-- Support Me -->
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
-			<string>Support Me</string>
-		</dict>
-		<dict>
-			<key>cellClass</key>
-			<string>HBLinkTableCell</string>
-			<key>label</key>
-			<string>Little Donation 🌺</string>
-			<key>subtitle</key>
-			<string>Helps Me To Pay For My Server</string>
-			<key>url</key>
-			<string>https://paypal.me/ShyMemoriees</string>
-		</dict>
-		<dict>
-			<key>cellClass</key>
-			<string>HBLinkTableCell</string>
-			<key>label</key>
-			<string>Feature Request? ✨</string>
-			<key>subtitle</key>
-			<string>Send Me An Email With Your Request</string>
-			<key>url</key>
-			<string>mailto:shymemoriees@yahoo.com</string>
-		</dict>
-		<dict>
-			<key>cellClass</key>
-			<string>HBLinkTableCell</string>
-			<key>label</key>
-			<string>Source Code 🌙</string>
-			<key>subtitle</key>
-			<string>Github</string>
-			<key>url</key>
-			<string>https://github.com/ShyMemoriees/Layla</string>
-		</dict>
-		<dict>
-			<key>cellClass</key>
-			<string>HBLinkTableCell</string>
-			<key>label</key>
-			<string>Found A Bug? 🌧</string>
-			<key>subtitle</key>
-			<string>Leave A Bug Report Here</string>
-			<key>url</key>
-			<string>https://github.com/ShyMemoriees/Layla/issues/new</string>
-		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
@@ -114,19 +137,67 @@
             <string>taki</string>
             <key>user</key>
             <string>74k1_</string>
+        </dict>
+
+		<!-- Support Me -->
+		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
-        </dict>
+			<key>label</key>
+			<string>Support Me</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Little Donation 🌺</string>
+			<key>subtitle</key>
+			<string>Helps Me To Pay For My Server</string>
+			<key>url</key>
+			<string>https://paypal.me/Litteeen</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Feature Request? ✨</string>
+			<key>subtitle</key>
+			<string>Send Me An Email With Your Request</string>
+			<key>url</key>
+			<string>mailto:hello@litten.sh?subject=Nevve%20Feature%20Request</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Source Code 🌙</string>
+			<key>subtitle</key>
+			<string>Github</string>
+			<key>url</key>
+			<string>https://github.com/Litteeen/Nevve</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Found A Bug? 🌧</string>
+			<key>subtitle</key>
+			<string>Leave A Bug Report Here</string>
+			<key>url</key>
+			<string>https://github.com/Litteeen/Nevve/issues/new</string>
+		</dict>
+
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Layla by ShyMemoriees and iKilledAppl3, Made With ❤️</string>
+			<string>Nevve By Litten, Made With ❤️</string>
 			<key>isStaticText</key>
 			<true/>
 		</dict>
+
 	</array>
 	<key>title</key>
-	<string>Layla</string>
+	<string>Nevve</string>
 </dict>
 </plist>
