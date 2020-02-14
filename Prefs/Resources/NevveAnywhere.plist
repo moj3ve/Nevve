@@ -175,6 +175,20 @@
 
 		<dict>
 			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>sh.litten.nevvepreferences</string>
+			<key>key</key>
+			<string>typingSoundSwitch</string>
+			<key>label</key>
+			<string>Typing Sound</string>
+			<key>PostNotification</key>
+			<string>sh.litten.nevvepreferences/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSLinkListCell</string>
 			<key>default</key>
 			<string>None</string>

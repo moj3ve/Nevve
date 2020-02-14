@@ -75,14 +75,27 @@
 
 %hook SBFolderController
 
-- (void)prepareToOpen {
+- (void)folderControllerWillOpen:(id)arg1 {
 
     %orig;
     if (enabled) {
-        folderSound = 0;
-		AudioServicesDisposeSystemSoundID(folderSound);
-		AudioServicesCreateSystemSoundID((CFURLRef) CFBridgingRetain([NSURL fileURLWithPath:[NSString stringWithFormat:@"/Library/Nevve/%@",folderSoundsList]]),& folderSound);
-		AudioServicesPlaySystemSound(folderSound); 
+        folderOpenSound = 0;
+		AudioServicesDisposeSystemSoundID(folderOpenSound);
+		AudioServicesCreateSystemSoundID((CFURLRef) CFBridgingRetain([NSURL fileURLWithPath:[NSString stringWithFormat:@"/Library/Nevve/%@",folderOpenSoundsList]]),& folderOpenSound);
+		AudioServicesPlaySystemSound(folderOpenSound); 
+
+    }
+
+}
+
+- (void)folderControllerWillClose:(id)arg1 {
+
+    %orig;
+    if (enabled) {
+        folderCloseSound = 0;
+		AudioServicesDisposeSystemSoundID(folderCloseSound);
+		AudioServicesCreateSystemSoundID((CFURLRef) CFBridgingRetain([NSURL fileURLWithPath:[NSString stringWithFormat:@"/Library/Nevve/%@",folderCloseSoundsList]]),& folderCloseSound);
+		AudioServicesPlaySystemSound(folderCloseSound); 
 
     }
 
@@ -91,6 +104,23 @@
 %end
 
 %hook SBIconController
+
+- (void)iconTapped:(id)arg1 {
+
+    %orig;
+    if (enabled) {
+        tappingIconSound = 0;
+		AudioServicesDisposeSystemSoundID(tappingIconSound);
+		AudioServicesCreateSystemSoundID((CFURLRef) CFBridgingRetain([NSURL fileURLWithPath:[NSString stringWithFormat:@"/Library/Nevve/%@",tappingIconSoundsList]]),& tappingIconSound);
+		AudioServicesPlaySystemSound(tappingIconSound); 
+
+    }
+
+}
+
+%end
+
+%hook SBHIconManager
 
 - (void)iconTapped:(id)arg1 {
 
@@ -350,12 +380,14 @@
 
 - (void)playKeyClickSoundOnDownForKey:(UIKBTree *)key {
 
-    %orig;
-    if (enabled) {
+    if (enabled && typingSoundSwitch) {
         typingSound = 0;
 		AudioServicesDisposeSystemSoundID(typingSound);
 		AudioServicesCreateSystemSoundID((CFURLRef) CFBridgingRetain([NSURL fileURLWithPath:[NSString stringWithFormat:@"/Library/Nevve/%@",typingSoundsList]]),& typingSound);
 		AudioServicesPlaySystemSound(typingSound); 
+
+    } else {
+        %orig;
 
     }
 
@@ -695,11 +727,13 @@
     // Enabled Switch
     [pfs registerBool:&enabled default:YES forKey:@"Enabled"];
     // Option Switches
+    [pfs registerBool:&typingSoundSwitch default:NO forKey:@"typingSoundSwitch"];
     // Homescreen
     [pfs registerObject:& killingAppSoundsList default:nil forKey:@"killingAppSounds"];
 	[pfs registerObject:& forceTouchSoundsList default:nil forKey:@"forceTouchSounds"];
     [pfs registerObject:& appSwitcherSoundsList default:nil forKey:@"appSwitcherSounds"];
-    [pfs registerObject:& folderSoundsList default:nil forKey:@"folderSounds"];
+    [pfs registerObject:& folderOpenSoundsList default:nil forKey:@"folderOpenSounds"];
+    [pfs registerObject:& folderCloseSoundsList default:nil forKey:@"folderCloseSounds"];
     [pfs registerObject:& tappingIconSoundsList default:nil forKey:@"tappingIconSounds"];
     [pfs registerObject:& swipingSoundsList default:nil forKey:@"swipingSounds"];
     [pfs registerObject:& spotlightSoundsList default:nil forKey:@"spotlightSounds"];

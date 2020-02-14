@@ -12,12 +12,14 @@ BOOL dpkgInvalid = NO;
 
 // Option Switches
 BOOL enabled = YES;
+BOOL typingSoundSwitch = NO;
 
 // Homescreen
 SystemSoundID killingAppSound;
 SystemSoundID forceTouchSound;
 SystemSoundID appSwitcherSound;
-SystemSoundID folderSound;
+SystemSoundID folderOpenSound;
+SystemSoundID folderCloseSound;
 SystemSoundID tappingIconSound;
 SystemSoundID swipingSound;
 SystemSoundID spotlightSound;
@@ -25,7 +27,8 @@ SystemSoundID spotlightSound;
 NSString *killingAppSoundsList;
 NSString *forceTouchSoundsList;
 NSString *appSwitcherSoundsList;
-NSString *folderSoundsList;
+NSString *folderOpenSoundsList;
+NSString *folderCloseSoundsList;
 NSString *tappingIconSoundsList;
 NSString *swipingSoundsList;
 NSString *spotlightSoundsList;
